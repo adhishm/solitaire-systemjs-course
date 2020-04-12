@@ -41,7 +41,7 @@ node {
 
 input message: 'Deploy to staging?'
 
-stage('Deploy') {
+stage('Deploy to staging') {
     node {
         // write build number to index page so we can see this update
         // on windows use: bat "echo '<h1>${env.BUILD_DISPLAY_NAME}</h1>' >> app/index.html"
