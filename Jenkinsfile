@@ -2,8 +2,7 @@ stage('CI') {
     node('master') {
         try {
             checkout scm
-            // git branch: 'jenkins2-course',
-            //    url: 'https://github.com/adhishm/solitaire-systemjs-course.git'
+            // git repo and branch defined inside Jenkins job
             
             sh label: '',
                 script: 'npm install'
